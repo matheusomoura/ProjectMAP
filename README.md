@@ -18,25 +18,40 @@ Projeto desenvolvido com Streamlit, LangChain e OpenAI que utiliza arquivos em P
 ## 🧩 Estrutura de Diretórios
 
 oraculum/
+
 ├── main.py # Arquivo principal
+
 ├── views/ # Páginas do app
+
 │ ├── chat_page.py
+
 │ ├── upload_page.py
+
 │ ├── faiss_page.py
+
 │ └── qa_page.py
+
 ├── faiss_db.py # Módulo FAISS
+
 ├── utils.py # Histórico, conversão etc
+
 ├── file_md/ # Conversor docling
+
 ├── data/
+
 │ └── md/ # PDFs e textos para ingestão
+
 ├── .env # Chaves da API
+
 └── requirements.txt
 
 ---
 
 ## 💬 Exemplo de Uso
 Pergunta: Quais são os principais parques de Brasília?
+
 Resposta: (gerada com base no conteúdo dos PDFs)
+
 Cita os nomes, características e fontes utilizadas como [GuiaParquesSeturDF.pdf].
 
 ---
