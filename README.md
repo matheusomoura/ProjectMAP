@@ -57,8 +57,6 @@ Cita os nomes, características e fontes utilizadas como [GuiaParquesSeturDF.pdf
 ---
 
 ## 📌 Observações
-Modo escuro foi desativado para maior simplicidade
-
 O horário exibido é baseado no fuso de Brasília (UTC-3)
 
 Interface ajustada com balões e timestamps
