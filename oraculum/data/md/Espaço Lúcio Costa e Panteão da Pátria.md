@@ -1,0 +1,8 @@
+## Espaço Lúcio Costa e Panteão da Pátria
+
+- O Espaço Lúcio Costa e o Panteão da Pátria são dois importantes pontos turísticos localizados na Praça dos Três Poderes. Juntos, eles representam a história da construção de Brasília e o reconhecimento aos heróis nacionais que contribuíram para a formação do Brasil.
+- O Espaço Lúcio Costa homenageia o urbanista responsável pelo plano piloto de Brasília. Projetado por Oscar Niemeyer, o espaço expositivo fica parcialmente subterrâneo, com acesso por uma rampa que conduz o visitante a uma grande maquete da cidade, que mostra o plano em formato de avião. A exposição permanente apresenta documentos, fotos e vídeos sobre a construção da capital, revelando o trabalho visionário de Lúcio Costa e a magnitude da obra realizada em apenas quatro anos.
+
+Ao lado, o Panteão da Pátria e da Liberdade Tancredo Neves é um monumento moderno em forma de pomba, símbolo da liberdade. Inaugurado em 1986, o local abriga o 'Livro de Aço', onde estão inscritos os nomes dos heróis nacionais, como Tiradentes, Zumbi dos Palmares, Dom Pedro I e Anita Garibaldi. O espaço também conta com murais, vitrais e obras de arte que exaltam a memória política e histórica do país.
+
+Ambos os locais são acessíveis ao público, com entrada gratuita, e oferecem uma experiência educativa e simbólica. Ao visitar esses espaços, o turista mergulha não apenas na história da cidade, mas também nos ideais de liberdade, civismo e desenvolvimento que marcaram a fundação de Brasília.
