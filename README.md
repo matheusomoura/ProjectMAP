@@ -1,108 +1,74 @@
-Guia de Implementação do Projeto Oraculum: Guia Turístico com IA
+# 🗺️ MAP Turismo – Guia Turístico Inteligente de Brasília
 
-Este documento apresenta, em formato de passo a passo, todas as etapas realizadas para colocar em funcionamento o projeto Oraculum: um chatbot inteligente com RAG (Retrieval-Augmented Generation) especializado em turismo em Brasília, rodando com Streamlit e LangChain.
+Projeto desenvolvido com Streamlit, LangChain e OpenAI que utiliza arquivos em PDF e DOCX para responder perguntas sobre turismo em Brasília com base em fontes reais.
 
-✅ 1. Estrutura Inicial do Projeto
+---
 
-Criamos a estrutura de pastas:
+## ✅ Funcionalidades
+
+- Chat interativo com interface moderna
+- Leitura de documentos PDF, DOCX, TXT ou MD
+- Vetorização automática com FAISS
+- Histórico por sessão e exportação de conversa
+- Respostas simpáticas e informativas com IA
+- Contexto baseado em guias turísticos reais
+
+---
+
+## 🧩 Estrutura de Diretórios
 
 oraculum/
-├─ app/
-│   ├─ views/
-│   └─ faiss_db.py, utils.py, main.py, etc.
-├─ data/md/        # Pasta para PDFs e textos
-├─ data/faiss_index/
-└─ Dockerfile, docker-compose.yml
+├── main.py # Arquivo principal
+├── views/ # Páginas do app
+│ ├── chat_page.py
+│ ├── upload_page.py
+│ ├── faiss_page.py
+│ └── qa_page.py
+├── faiss_db.py # Módulo FAISS
+├── utils.py # Histórico, conversão etc
+├── file_md/ # Conversor docling
+├── data/
+│ └── md/ # PDFs e textos para ingestão
+├── .env # Chaves da API
+└── requirements.txt
 
-O arquivo docker-compose.yml definiu o container oraculum, com mapeamento de volume, variáveis .env, e porta 8501 do Streamlit.
+---
 
-✅ 2. Configuração de Ambiente
+## 💬 Exemplo de Uso
+Pergunta: Quais são os principais parques de Brasília?
+Resposta: (gerada com base no conteúdo dos PDFs)
+Cita os nomes, características e fontes utilizadas como [GuiaParquesSeturDF.pdf].
 
-Criamos o .env com:
+---
 
-OPENAI_API_KEY=...
-MODEL_CHAT=gpt-4o
+## 📌 Observações
+Modo escuro foi desativado para maior simplicidade
 
-Instalamos as dependências no requirements.txt:
+O horário exibido é baseado no fuso de Brasília (UTC-3)
 
-streamlit
-langchain
-langchain-openai
-python-dotenv
-docling
-faiss-cpu
+Interface ajustada com balões e timestamps
 
-✅ 3. Desenvolvimento das Páginas (views)
+Conversas podem ser exportadas via botão na barra lateral
 
-Criamos 4 views:
+---
 
-chat_page.py
+## 🧠 Tecnologias Utilizadas
+Python 3.10+
 
-upload_page.py
+Streamlit
 
-qa_page.py
+LangChain
 
-faiss_page.py
+OpenAI GPT-4o
 
-Integramos no main.py com navegação via st.sidebar.radio
+FAISS
 
-✅ 4. Interface do Chat
+Docker
 
-Implementamos layout com balões de conversa, scroll automático, timestamp, tema responsivo (removido depois)
+Docling
 
-Adicionamos opção de:
+---
 
-Exportar conversa em .txt
-
-Limpar histórico de sessão
-
-✅ 5. Vetorização e FAISS
-
-O sistema converte arquivos PDF, DOCX, TXT ou MD para Markdown usando docling
-
-Textos vetorizados com embeddings do LangChain + OpenAI
-
-Armazenamento no diretório data/faiss_index/
-
-✅ 6. Upload e Alimentação
-
-Os arquivos são colocados na pasta:
-
-oraculum/data/md/
-
-Apesar do nome, aceita PDF, DOCX e TXT.
-
-A conversão e indexação ocorre ao clicar no botão de upload ou ao reiniciar com arquivos novos.
-
-✅ 7. Execução com Docker
-
-Para iniciar o sistema:
-
-docker-compose up --build
-
-Para encerrar:
-
-Basta pressionar Ctrl + C no terminal.
-
-Para iniciar no dia seguinte:
-
-docker-compose up
-
-✅ Resultado Final
-
-Sistema acessível em: http://localhost:8501
-
-Chat responsivo e funcional
-
-Respostas contextualizadas a partir dos documentos fornecidos
-
-Pronto para ser usado por visitantes ou profissionais de turismo
-
-✨ Extras
-
-Sistema pode ser expandido para novos temas (educação, saúde, eventos)
-
-Base local, sem necessidade de banco de dados
-
-Pode ser hospedado em nuvem (Render, Railway, etc.)
-
+## 👨‍🏫 Projeto Acadêmico
+Desenvolvido como entrega de projeto final para disciplina de IA aplicada.
+Orientado para fornecer uma solução prática e acessível com uso de dados reais do turismo do DF.
